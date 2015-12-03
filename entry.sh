@@ -9,4 +9,4 @@ docker run --rm -v `pwd`:/data leanlabs/git-builder:latest -C $REPOSITORY_NAME i
 docker run --rm -v `pwd`:/data leanlabs/git-builder:latest -C $REPOSITORY_NAME fetch $REPOSITORY_GIT_HTTP_URL $REF
 docker run --rm -v `pwd`:/data leanlabs/git-builder:latest -C $REPOSITORY_NAME checkout $AFTER
 
-docker run --rm -v `pwd`/$REPOSITORY_NAME:`pwd`/$REPOSITORY_NAME -w `pwd`/$REPOSITORY_NAME -v /var/run/docker.sock:/var/run/docker.sock -v /var/run/docker.pid:/var/run/docker.pid  leanlabs/make-builder
+docker run --rm -v `pwd`/$REPOSITORY_NAME:`pwd`/$REPOSITORY_NAME -w `pwd`/$REPOSITORY_NAME -v /var/run/docker.sock:/var/run/docker.sock leanlabs/make-builder
