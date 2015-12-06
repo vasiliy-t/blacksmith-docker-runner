@@ -19,7 +19,7 @@ docker run --rm \
     -v /var/run/docker.pid:/var/run/docker.pid \
     -e REPOSITORY_GIT_HTTP_URL=https://yourepourl \
     -e REPOSITORY_NAME=youreponame \
-    -e AFTER=commit_to_build \
+    -e COMMIT=commit_to_build \
     leanlabs/blacksmith-docker-runner
 ```
 
@@ -29,4 +29,4 @@ docker run --rm \
 
 **REPOSITORY_NAME** - actual repository name
 
-**AFTER** - the commit to build
+**COMMIT** - the commit to build

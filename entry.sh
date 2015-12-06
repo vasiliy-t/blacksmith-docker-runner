@@ -22,7 +22,7 @@ docker run --rm \
 docker run --rm \
     -v `pwd`:/data \
     leanlabs/git-builder:latest \
-    -C $REPOSITORY_NAME checkout $AFTER
+    -C $REPOSITORY_NAME checkout $COMMIT
 
 # Start build process
 docker run --rm \
